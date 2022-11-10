@@ -1,0 +1,161 @@
+#header {
+    background-color:#FFFAE7;
+    padding-left: 7.5rem;
+    padding-right: 7.5rem;
+    display: flex;
+    margin-top: 2rem;
+}
+
+#headersContainer {
+    position: relative;
+}
+
+#roundedArrow {
+    position: absolute;
+    left: 25rem;
+    top: 7rem;
+}
+
+#h1 {
+    font-weight: 700;
+    font-size: 4rem;
+    padding-top: 11.7rem;
+    line-height: 4.5rem;
+}
+#p {
+    padding-top: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color:#636363;
+    max-width: 38rem;
+}
+
+#buttonsWrapper {
+    padding-top: 3rem;
+    padding-bottom: 11.7rem;
+    display: flex;
+}
+
+#sixK {
+    position: absolute;
+    width: 7.6rem;
+    height: 7.6rem;
+    border-radius: 1.2rem;
+    background-color: black;
+    right: 25rem;
+    top: 7rem;
+    text-align: center;
+    z-index: 20;
+}
+
+#sixK_title {
+    color: white;
+    font-weight: 700;
+    font-size: 3.1rem;
+    padding-top: 1.5rem;
+    line-height: 3.1rem;
+}
+
+#sixK_subTitle {
+    font-weight: 400;
+    font-size: 1rem;
+    color: #979595;
+    padding-top: 0.5rem;
+}
+
+#girl {
+    position: absolute;
+    right: 3rem;
+    top: 9rem;
+    z-index: 10;
+}
+
+#imagesContainer {
+    position: relative;
+    width: 50%;
+}
+
+#bring {
+    width: 17.2rem;
+    height: 4.7rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    border-radius: 0.5rem;
+    position: absolute;
+    right: 15.4rem;
+    bottom: 8.7rem;
+    z-index: 20;
+}
+
+#bringImage {
+    padding-left: 0.6rem;
+}
+
+#bringTitle {
+    font-size: 1rem;
+    font-weight: 700;
+    color: black;
+    padding-left: 0.6rem;
+}
+
+#market {
+    position: absolute;
+    width: 11.3rem;
+    height: 7.6rem;
+    border-radius: 1.2rem;
+    background-color: white;
+    right: -0.5rem;
+    bottom:12rem;
+    text-align: center;
+    z-index: 20;
+}
+
+#market_title {
+    color: black;
+    font-weight: 700;
+    font-size: 3.1rem;
+    padding-top: 1.5rem;
+    line-height: 3.1rem;
+}
+
+#market_subTitle {
+    font-weight: 400;
+    font-size: 1rem;
+    color: #979595;
+    padding-top: 0.5rem;
+}
+
+#blackBg {
+    position: absolute;
+    right: -7.5rem;
+    top: 0;
+    width: 25rem;
+    background-color: #1A1A1F;
+    height: 100%;
+}
+
+#shape {
+    position: absolute;
+    left: 5.2rem;
+}
+
+#square {
+    position: absolute;
+    z-index: 20;
+    left: 10.3rem;
+    top: 21.4rem;
+}
+
+#triangle {
+    position: absolute;
+    left: 6rem;
+    top: 5rem;
+    z-index: 20;
+}
+
+#vector {
+    position: absolute;
+
+}

@@ -1,0 +1,34 @@
+
+
+
+#navbar {
+    width: 100%;
+    height: 100%;
+    background-color: #ffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#global {
+    padding-left: 7.5rem;
+    padding-right: 7.5rem;
+    padding-top: 1.2rem;
+}
+
+#container {
+    display: flex;
+}
+
+
+
+.link {
+    display: flex;
+    padding-right: 1.5rem;
+    align-items: center;
+}
+
+.link p {
+    padding-right: 0.2rem;
+}
