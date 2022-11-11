@@ -1,0 +1,159 @@
+#global {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#questions {
+    padding-top: 10rem;
+}
+
+#header {
+    position: relative;
+}
+
+#title {
+    color: #111827;
+    font-weight: 700;
+    font-size: 3rem;
+    
+}
+
+#subTitle {
+    color:#636363;
+    font-size: 1rem;
+    font-weight: 400;
+    padding-top: 0.5rem;
+}
+
+#serviceArrow {
+    position: absolute;
+    right:8rem;
+    top:-5rem;
+}
+
+#questionsTriangle {
+    position: absolute;
+    z-index: -1;
+    left: -2.2rem;
+    top: -1rem;
+}
+
+#rectangle {
+    position: absolute;
+    right: 11.5rem;
+    top:2rem;
+}
+
+#question {
+    width: 34rem;
+    height: 5.75rem;
+    border:1.5px solid #9CA3AF;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#questionTitle {
+    /* line-height: 5.75rem; */
+    color:#111827;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+#container {
+    padding-top: 2rem;
+    display: flex;
+}
+
+.row {
+    margin-right: 1.9rem;
+}
+
+#flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 2rem;
+    padding-top: 2rem;
+}
+
+#open {
+    width: 34rem;
+    min-height: 5.75rem;
+    height: auto;
+    border:1.5px solid #DCB0FE;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#openPara {
+    color:#636363;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+    padding: 0 2rem;
+    padding-top: 1.1rem;
+    padding-bottom: 2rem;
+}
+
+@media (max-width:1300px) {
+    #question {
+       width: 29rem; 
+    }
+}
+
+@media (max-width:1100px) {
+    #question {
+       width: 24rem; 
+    }
+    #serviceArrow {
+        right: 0rem;
+        top:-6rem;
+    }
+    #serviceArrow {
+        right: -2rem;
+        top:-5rem;
+    }
+    #rectangle {
+        right: 2rem;
+    }
+}
+
+@media (max-width:950px) {
+    #question {
+       width: 20rem; 
+    }
+    #serviceArrow {
+        right: 0rem;
+        top:-6rem;
+    }
+    #serviceArrow {
+        right: -2rem;
+        top:-9rem;
+    }
+    #rectangle {
+        right: 2rem;
+        top: -2rem;
+    }
+}
+
+@media (max-width:800px) {
+   #global {
+    padding-left: 2rem;
+    padding-right: 2rem;
+   }
+   .row {
+    width: 100%;
+    margin-right: 0;
+   }
+   #open {
+    width: 100%;
+   }
+   #question {
+    width: 100% !important;
+   }
+   #container {
+    flex-direction: column !important;
+    align-items: center;
+    width: 100%;
+   }
+}

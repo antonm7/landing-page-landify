@@ -8,7 +8,9 @@ export default function Navbar() {
         <div id={styles.global}>
             <div id={styles.navbar}>
                 <img src={logo}/>
-                
+                <div id={styles.menu}>
+
+                </div>
                 <div id={styles.container}>
                     <div className={styles.link}>
                         <p>Product</p>

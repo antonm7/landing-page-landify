@@ -194,3 +194,272 @@
     font-size: 1rem;
     padding-left: 0.7rem;
 }
+
+@media (max-width:1400px) {
+    #h1 {
+        font-size: 3.2rem;
+    }
+    #p {
+        max-width: 27rem;
+    }
+    #header {
+        padding-right: 0;
+    }
+    #imagesContainer {
+        width: 55%;
+    }
+    #roundedArrow {
+        left: 20rem;
+        top: 7.5rem;
+    }
+}
+
+@media (max-width:1200px) {
+    #header {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    #roundedArrow {
+        left: 15rem;
+    }
+}
+
+@media (max-width:1050px) {
+    #roundedArrow {
+        scale: 0.7;
+        top: 2rem;
+        left: 17rem;
+    }
+    #headersContainer {
+        max-width: 25rem;
+    }
+    #h1 {
+        padding-top: 3rem;
+    }
+    #blackBg {
+        width: 35%;
+    }
+    #girl {
+        top: 2rem;
+        left:10%;
+        scale:0.7
+    }
+    #shape {
+        z-index: 20;
+        left: 20.5rem;
+        scale:0.7;
+        right:18rem;
+    }
+    #wrapper {
+        height: 30rem;
+    }
+    #header {
+        background-size: 55rem;
+        background-position:left -2rem ;
+    }
+    #market {
+        top: 16rem;
+        left: 20rem;
+        scale:0.7
+    }
+    #bring {
+
+        left: 3rem;
+        top: 20.5rem;
+        scale:0.7
+    }
+    #sixK {
+        top: 5rem;
+        left: 6rem;
+        scale:0.7
+    }
+}
+
+@media (max-width:950px) {
+    #imagesContainer {
+        margin-right: 10rem;
+    }
+    #p {
+        max-width: 31rem;
+    }
+
+}
+
+@media (max-width:850px) {
+    #imagesContainer {
+        margin-right: 16rem;
+    }
+    #girl {
+        top: 2rem;
+        left:10%;
+        scale:0.5
+    }
+    #shape {
+        left: 15rem;
+    }
+    #market {
+        top: 15rem;
+        left: 15rem;
+        scale:0.5
+    }
+    #bring {
+        left: 3rem;
+        top:18.5rem;
+        scale:0.5
+    }
+    #sixK {
+        top: 6rem;
+        left: 6rem;
+        scale:0.5
+    }
+    #p {
+        max-width: 90%;
+    }
+}
+
+@media (max-width:700px) {
+    #headersContainer {
+        background-image: url('/public/bg.svg');
+        background-repeat: no-repeat;
+        background-size: 43rem;
+        background-position: 0rem 0rem;
+        max-width: 100%;
+        padding-right: 2rem;
+        padding-left: 2rem;
+        padding-bottom: 1rem;
+    }
+    #buttonsWrapper {
+        padding-bottom: 0;
+    }
+    #bottomLower {
+        background-color: #1A1A1F;
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+        position: relative;
+        height: 30rem;
+    }
+    #bring {
+        position: absolute;
+        scale: 0.8;
+        top: 21.5rem;
+    }
+    #market {
+        scale: 0.8;
+        position: absolute;
+        left: 22rem;
+        top: 16rem;
+    }
+    #sixK {
+        scale: 0.8;
+        position: absolute;
+        left: 3rem;
+        top: 5rem;
+    }
+    #girl {
+        scale: 0.8;
+        position: absolute;
+    }
+    #shape {
+        scale: 0.8;
+        left: 22rem;
+        top: 0;
+        position: absolute;
+    }
+}
+
+@media (max-width:560px) {
+    #bottomLower {
+       
+        height: 20rem;
+    }
+    #bring {
+        position: absolute;
+        scale: 0.7;
+        top: 13.5rem;
+        left: 0rem;
+    }
+    #market {
+        scale: 0.5;
+        position: absolute;
+        left: 14.5rem;
+        top: 10rem;
+    }
+    #sixK {
+        scale: 0.5;
+        position: absolute;
+        left: 3rem;
+        top: 3rem;
+    }
+    #girl {
+        scale: 0.5;
+        position: absolute;
+        top: -2.5rem;
+        left: 0rem;
+    }
+    #shape {
+        scale: 0.5;
+        left: 17rem;
+        top: 0;
+        position: absolute;
+    }
+    
+}
+
+@media (max-width:420px) {
+    #bottomLower {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 0;
+        padding-top: 1rem;
+    }
+    #bring {
+        position: static;
+        scale: 1;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        max-width: 90%;
+    }
+    #bringTitle {
+        white-space: nowrap;
+        font-size: 0.8rem;
+    }
+    #market {
+        scale: 0.8;
+        position: static;
+        
+    }
+    #sixK {
+        scale: 0.8;
+        position: static;
+       
+    }
+    #girl {
+        scale: 0.7;
+        position: static;
+      
+    }
+    #shape {
+        top: 0;
+        left: 10rem;
+        z-index: 20;
+        scale: 0.8;
+        position: absolute;
+
+    }
+    #roundedArrow {
+        display: none;
+    }
+    #h1 {
+        font-size: 2.8rem;
+        line-height: 3.2rem;
+    }
+    br {
+        display: none;
+    }
+    #playTitle {
+        display: none;
+    }
+}

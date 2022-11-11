@@ -30,3 +30,20 @@
 .link p {
     padding-right: 0.2rem;
 }
+
+
+@media (max-width:1200px) {
+    #global {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media (max-width:850px) {
+    #menu {
+        display: block;
+    }
+    .link {
+        display: none;
+    }
+}
