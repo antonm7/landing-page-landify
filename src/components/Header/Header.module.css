@@ -1,5 +1,12 @@
+#wrapper {
+    position: relative;
+    
+}
 #header {
-    background-color:#FFFAE7;
+    background-image: url('/public/bg.svg');
+    background-repeat: no-repeat;
+    background-size: 78rem;
+    background-position: left center;
     padding-left: 7.5rem;
     padding-right: 7.5rem;
     display: flex;
@@ -129,16 +136,16 @@
 
 #blackBg {
     position: absolute;
-    right: -7.5rem;
     top: 0;
-    width: 25rem;
+    right: 0;
+    width:35rem;
     background-color: #1A1A1F;
     height: 100%;
 }
 
 #shape {
     position: absolute;
-    left: 5.2rem;
+    right: 13rem;
 }
 
 #square {
@@ -158,4 +165,32 @@
 #vector {
     position: absolute;
 
+}
+
+#demoWrapper {
+    display: flex;
+    align-items: center;
+    padding-left: 2.1rem;
+}
+
+#circle {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100rem;
+    background-color: #1A1A1F;
+    position: relative;
+}
+
+#play {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-40%,-50%);
+}
+
+#playTitle {
+    color: #1A1A1F;
+    font-weight: 500;
+    font-size: 1rem;
+    padding-left: 0.7rem;
 }

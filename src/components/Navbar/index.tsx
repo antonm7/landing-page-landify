@@ -25,7 +25,7 @@ export default function Navbar() {
                     <div className={styles.link}>
                         <p>Pricing</p>
                     </div>
-                    <RoundedButton title={'Subscribe'} bg={'#1A1A1F'} color={'#ffff'} />
+                    <RoundedButton marginLeft='2rem' title={'Subscribe'} bg={'#1A1A1F'} color={'#ffff'} />
                 </div>
             </div>
         </div>
