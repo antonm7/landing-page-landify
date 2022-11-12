@@ -9,10 +9,6 @@ import HeaderShape from './HeaderShape'
 import { useEffect, useState } from 'react'
 
 
-
-
-
-
 export default function Header() {
     const [dimensions, setDimensions] = useState({ 
         height: window.innerHeight,
@@ -29,7 +25,7 @@ export default function Header() {
         window.addEventListener('resize', handleResize)
       },[])
 
-      if(dimensions.width <= 700) {
+      if(dimensions.width <= 750) {
         return (
             <div id={styles.lowerWrapper}>
                 <div id={styles.headersContainer}>
@@ -48,42 +44,42 @@ export default function Header() {
                     </div>
                     <img src={roundedArrow} id={styles.roundedArrow}/>
                 </div>
-                    {dimensions.width <= 420 ? 
-                     <div id={styles.bottomLower}>
-                        <HeaderShape />
-                        <div style={{display:'flex',justifyContent:'center'}}>
-                            <div id={styles.market}>
-                                <p id={styles.market_title}>40%</p>
-                                <p id={styles.market_subTitle}>Market</p>
-                            </div>
-                            <div id={styles.sixK}>
-                                <p id={styles.sixK_title}>6K</p>
-                                <p id={styles.sixK_subTitle}>Clients</p>
-                            </div>
-                        </div> 
+                {dimensions.width > 560 ?
+                    <div id={styles.bottomLower}>
                         <img src={girl} id={styles.girl}/>
                         <div id={styles.bring}>
                             <img id={styles.bringImage} src={bring}/>
                             <p id={styles.bringTitle}>Bring your ideas to life</p>
                         </div>
+                        <div id={styles.market}>
+                            <p id={styles.market_title}>40%</p>
+                            <p id={styles.market_subTitle}>Market</p>
+                        </div>
+                        <div id={styles.sixK}>
+                            <p id={styles.sixK_title}>6K</p>
+                            <p id={styles.sixK_subTitle}>Clients</p>
+                        </div>
+                        <HeaderShape />
                     </div> :
-                <div id={styles.bottomLower}>
-                    <img src={girl} id={styles.girl}/>
-                    <div id={styles.bring}>
-                        <img id={styles.bringImage} src={bring}/>
-                        <p id={styles.bringTitle}>Bring your ideas to life</p>
-                    </div>
-                    <div id={styles.market}>
-                        <p id={styles.market_title}>40%</p>
-                        <p id={styles.market_subTitle}>Market</p>
-                    </div>
-                    <div id={styles.sixK}>
-                        <p id={styles.sixK_title}>6K</p>
-                        <p id={styles.sixK_subTitle}>Clients</p>
-                    </div>
-                    <HeaderShape />
-                </div>
-      }
+                        <div id={styles.bottomWrapper} >
+                            <div id={styles.bottomLower}>
+                                <img src={girl} id={styles.girl}/>
+                                <div id={styles.bring}>
+                                    <img id={styles.bringImage} src={bring}/>
+                                    <p id={styles.bringTitle}>Bring your ideas to life</p>
+                                </div>
+                                <div id={styles.market}>
+                                    <p id={styles.market_title}>40%</p>
+                                    <p id={styles.market_subTitle}>Market</p>
+                                </div>
+                                <div id={styles.sixK}>
+                                    <p id={styles.sixK_title}>6K</p>
+                                    <p id={styles.sixK_subTitle}>Clients</p>
+                                </div>
+                            </div>
+                        </div>
+
+            }
             </div>
         )
       }

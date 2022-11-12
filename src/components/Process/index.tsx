@@ -24,7 +24,7 @@ export default function Process() {
                         <div style={{backgroundColor:'#FFEFB6'}} className={styles.circle}>
                             <img className={styles.image} src={Time}/>
                         </div>
-                        <h3 className={styles.boxTitle}>Planninga</h3>
+                        <h3 className={styles.boxTitle}>Planning</h3>
                         <h4 className={styles.boxPara}>A buisness plan helps formalize your idea.</h4>
                     </div>
                     <div className={styles.box} style={{paddingTop:'3rem'}}>

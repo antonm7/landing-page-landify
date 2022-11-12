@@ -55,12 +55,14 @@
 #rights {
     color: #979797;
     font-size: 0.9rem;
+    white-space: nowrap;
 }
 
 #bottomLink {
     display: inline;
     color: #636363;
     font-size: 0.9rem;
+    white-space: nowrap;
 }
 
 @media (max-width:1200px) {
@@ -74,9 +76,10 @@
     }
     #specialRow {
         flex-direction:column;
+  
     }
     #input {
-        width: 12rem;
+        width: 90%;
         margin-bottom: 1rem;
     }
 }
@@ -96,4 +99,29 @@
         align-items: center;
     }
     
+}
+
+@media (max-width:750px) {
+    #bottom {
+        align-items: flex-start;
+        flex-direction: column;
+        padding-left: 2rem;
+    }
+    #rights {
+        padding: 0;
+    }
+}
+
+@media (max-width:600px) {
+    #responsiveWrapper {
+        width: 100vw;
+        padding-top: 2rem;
+    }
+    #input {
+        width: 70%;
+    }
+    #bootomLinks {
+        display: flex;
+        flex-direction: column;
+    }
 }

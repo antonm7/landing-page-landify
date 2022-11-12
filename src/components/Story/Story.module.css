@@ -112,24 +112,51 @@
 }
 
 @media (max-width:750px) {
-    #bg {
-        transform: scaleX(0.4);
+    #smallStory {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding-top: 0rem;
+        align-items: center;
+        min-height: 75rem;
     }
-    #storyGirl {
-       display: none;
+    #smallStoryGirl {
+        position: absolute;
+        z-index: 30;
+        top: 7rem;
     }
-    #content {
-        left:22rem;
-        max-width: 26rem;
-        top: 17rem;
+    #smallContent {
+        margin-top: 38.5rem;
+        width: 22rem;
+        position: relative;
+        background-color: #1E1E1E;
+        border-radius: 1.25rem;
+        
+    }
+    #smallShape {
+        position: absolute;
+        top: 0;
+        display: none;
+    }
+    #para {
+        max-width: 80%;
     }
     #triangle {
-        right: 19rem;
+        top: 23rem;
+        right: -1rem;
+        z-index: 30;
+    }
+    #smallWrapper {
+        padding-top: 3.5rem;
+        padding-left: 1.3rem;
+        padding-bottom: 3.25rem;
     }
     #title {
         font-size: 2.8rem;
+       
     }
     #para {
         font-size: 0.9rem;
     }
+    
 }

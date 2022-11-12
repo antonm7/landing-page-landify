@@ -79,11 +79,20 @@
 }
 
 
-@media (max-width:700px) {
+@media (max-width:750px) {
+    #process {
+        padding-top: 5rem;
+    }
     .box {
         padding-top: 0 !important;
     }
     #para {
         width: 80%;
+        }
+        #title {
+            padding: 0rem 2rem;
+        }
+        #line {
+            margin-top: 2rem;
         }
 }

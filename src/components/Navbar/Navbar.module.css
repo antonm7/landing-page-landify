@@ -31,6 +31,9 @@
     padding-right: 0.2rem;
 }
 
+#menu {
+    display: none;
+}
 
 @media (max-width:1200px) {
     #global {
@@ -41,9 +44,11 @@
 
 @media (max-width:850px) {
     #menu {
-        display: block;
+        display: flex;
+        align-items: center;
     }
     .link {
         display: none;
+        padding-right: 0;
     }
 }

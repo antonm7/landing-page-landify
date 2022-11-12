@@ -27,7 +27,7 @@ export default function Footer() {
                         <div id={styles.main}>
                             <div className={styles.row}>
                                 <img src={whiteLogo} id={styles.whiteLogo}/>
-                                    <div  style={{display:'flex',width:'100%',justifyContent:'space-between',paddingTop:'2rem'}}>
+                                    <div  style={{display:'flex',width:'100%',justifyContent:'space-between',paddingTop:'2rem',flexWrap:'wrap'}}>
                                         <div>
                                             <h3 className={styles.title}>Menu</h3>
                                             <p className={styles.colLinks}>Services</p>
@@ -42,7 +42,7 @@ export default function Footer() {
                                             <p className={styles.colLinks}>Twitter</p>
                                             <p className={styles.colLinks}>Instagram</p>
                                         </div>
-                                        <div >
+                                        <div id={styles.responsiveWrapper}>
                                             <h3 className={styles.title}>Subscribe tp our newsletter!</h3>
                                             <div className={styles.row} id={styles.specialRow}>
                                                 <input placeholder='Your Email' id={styles.input}/>
@@ -53,12 +53,12 @@ export default function Footer() {
                                 </div>
                             </div>
                                 <div id={styles.bottom}>
-                                    <p id={styles.rights} style={{paddingLeft:'2rem'}}>
+                                    <p id={styles.rights} style={{paddingLeft:dimensions.width > 750 ? '2rem' : '0rem'}}>
                                         <span style={{color:'white'}}>2020 Landify</span>. All rights reserved
                                     </p>
                                     <div id={styles.bootomLinks} style={{paddingRight:'2rem'}}>
                                         <p id={styles.bottomLink}>Privacy Policy</p>
-                                        <p id={styles.bottomLink} style={{padding:'0 1.5rem'}}>Terms & Conditions</p>
+                                        <p id={styles.bottomLink} style={{padding:dimensions.width > 600 ? '0 1.5rem' : '0rem'}}>Terms & Conditions</p>
                                         <p id={styles.bottomLink}>Code of conduct</p>
                                     </div>
                                 </div>
