@@ -12,7 +12,7 @@ function App() {
   const [loading, setLoading] = useState<boolean>(true)
 
   return (
-    <div style={{opacity:loading ? 0 : 1,height:loading ? 0 : 'unset'}}>
+    <div >
     <Navbar />
     <Header loaded={() => setLoading(false)}/>
     <Process />
