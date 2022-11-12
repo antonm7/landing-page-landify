@@ -189,11 +189,10 @@
         width: 18rem;
     }
     #smallStoryGirl {
-        width: 18rem !important;
+        transform: scale(0.82);
     }
     #smallContent {
-
-        margin-top: 32rem;
+        margin-top: 35rem;
     }
     #triangle {
         top:27rem
