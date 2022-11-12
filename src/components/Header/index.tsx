@@ -2,7 +2,6 @@ import styles from './Header.module.css'
 import RoundedButton from '../common/RoundedButton'
 
 import roundedArrow from '/public/roundedArrow.svg'
-// import girl from '/public/girl.svg'
 import g from '/public/g.png'
 import bring from '/public/bring.svg'
 import play from '/public/play.svg'
