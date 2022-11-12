@@ -118,7 +118,7 @@ export default function Header({loaded}:Props) {
                             <p id={styles.sixK_title}>6K</p>
                             <p id={styles.sixK_subTitle}>Clients</p>
                         </div>
-                    <img src={girl} id={styles.girl}/>
+                    <img src={girl} id={styles.girl} onLoad={() => loaded()}/>
                     <div id={styles.bring}>
                         <img id={styles.bringImage} src={bring}/>
                         <p id={styles.bringTitle}>Bring your ideas to life</p>
