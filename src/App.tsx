@@ -6,11 +6,11 @@ import Process from './components/Process'
 import Services from './components/Services'
 import Questions from './components/Questions'
 import Footer from './components/Footer'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 function App() {
   const [loading, setLoading] = useState<boolean>(true)
-  
+
   return (
     <div style={{overflowY:loading ? 'hidden' : 'unset'}}>
       {loading ? 
