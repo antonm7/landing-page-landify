@@ -1,5 +1,4 @@
 import styles from './Services.module.css'
-import triangle from '/public/serviceTriangle.svg'
 import arrowRight from '/public/arrowRight.svg'
 import { useEffect, useState } from 'react'
 
@@ -21,7 +20,6 @@ export default function Services() {
     return (
         <div id={styles.services}>
             <div id={styles.header}>
-                <img src={triangle} id={styles.triangle}/>
                     <h1 id={styles.title}>Services we provide</h1>
                     <h4 id={styles.para}>We specialise in organising professional training courses.</h4>
             </div>

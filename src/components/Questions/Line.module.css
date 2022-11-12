@@ -1,4 +1,5 @@
 .question {
+    min-height: 5.75rem;
     width: 30rem;
     border:1.5px solid #9CA3AF;
     border-radius: 0.5rem;
@@ -9,12 +10,16 @@
     -o-transition: height 0.5S; 
     transition: height 0.5S; 
     padding:0 2rem;
+    padding-bottom: 1rem;
 }
 
 #flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 2.5rem;
+    align-items: center;
+
 }
 
 #openPara {
@@ -29,10 +34,11 @@
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.8rem;
+    padding-top: 1rem;
+    /* padding-bottom: 1rem; */
 }
 
 #questionTitle {
-    line-height: 5.75rem;
     white-space: nowrap;
     color:#111827;
     font-size: 1.1rem;
@@ -64,4 +70,16 @@
         margin:0rem auto; 
         margin-bottom: 2rem;
      }
+}
+
+@media (max-width:500px) {
+    .question {
+        width: 70%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    #questionTitle {
+        white-space: pre-wrap;
+    }
+   
 }

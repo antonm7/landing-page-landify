@@ -11,6 +11,13 @@
     padding-bottom: 20rem;
 }
 
+#rectangle {
+    position: absolute;
+    z-index:20;
+    left: 5rem;
+    bottom:-8rem;
+}
+
 #bg {
     position: relative;
     z-index: 10;
@@ -85,6 +92,12 @@
     #triangle {
         right: 9rem;
     }
+    #rectangle {
+        position: absolute;
+        z-index:20;
+        left: 11rem;
+        bottom:-8rem;
+    }
 }
 
 @media (max-width:850px) {
@@ -108,6 +121,13 @@
     }
     #para {
         font-size: 0.9rem;
+    }
+    #rectangle {
+       display: none;
+    }
+    #arrow {
+        left: 25rem;
+        bottom: 3rem;
     }
 }
 
@@ -142,7 +162,7 @@
         max-width: 80%;
     }
     #triangle {
-        top: 23rem;
+        top: 25.5rem;
         right: -1rem;
         z-index: 30;
     }
@@ -158,5 +178,52 @@
     #para {
         font-size: 0.9rem;
     }
-    
+    #arrow {
+        left: 2rem;
+        bottom: -8rem;
+    }
+}
+
+@media (max-width:450px) {
+    #smallContent {
+        width: 18rem;
+    }
+    #smallStoryGirl {
+        width: 18rem !important;
+    }
+    #smallContent {
+
+        margin-top: 32rem;
+    }
+    #triangle {
+        top:27rem
+    }
+    #smallStory {
+        min-height: 70rem;
+    }
+    #arrow {
+        bottom: -6rem;
+    }
+}
+
+@media (max-width:340px) {
+    #smallContent {
+        width: 14rem;
+    }
+    #smallStoryGirl {
+        width: 14rem !important;
+    }
+    #smallContent {
+
+        margin-top: 26rem;
+    }
+    #triangle {
+        top:37rem
+    }
+    #smallStory {
+        min-height: 70rem;
+    }
+    #arrow {
+        bottom: -5rem;
+    }
 }

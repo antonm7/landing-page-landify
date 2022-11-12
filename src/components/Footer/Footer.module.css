@@ -97,6 +97,8 @@
     }
     #bottom {
         align-items: center;
+        width: 12rem;
+        max-width: 12rem;
     }
     
 }
@@ -123,5 +125,8 @@
     #bootomLinks {
         display: flex;
         flex-direction: column;
+    }
+    #bottom {
+        padding-top: 2rem;
     }
 }

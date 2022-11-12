@@ -194,5 +194,17 @@
         padding: 0 1rem;
         padding-top:2rem;
     }
+    #subTitle {
+        max-width: 90%;
+    }
 }
+
+@media (max-width:400px) 
+{
+    #questions {
+        align-items: flex-start !important;
+    }
+}
+
+
 

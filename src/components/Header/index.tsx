@@ -8,19 +8,22 @@ import play from '/public/play.svg'
 import HeaderShape from './HeaderShape'
 import { useEffect, useState } from 'react'
 
+interface Props {
+    loaded:() => void
+}
 
-export default function Header() {
+export default function Header({loaded}:Props) {
     const [dimensions, setDimensions] = useState({ 
         height: window.innerHeight,
         width: window.innerWidth
       })
+
     useEffect(() => {
         function handleResize() {
           setDimensions({
             height: window.innerHeight,
             width: window.innerWidth
           })
-        
     }
         window.addEventListener('resize', handleResize)
       },[])
@@ -42,11 +45,11 @@ export default function Header() {
                             <h2 id={styles.playTitle}>View Demo</h2>
                         </div>
                     </div>
-                    <img src={roundedArrow} id={styles.roundedArrow}/>
+                    <img src={roundedArrow} id={styles.roundedArrow} />
                 </div>
                 {dimensions.width > 560 ?
                     <div id={styles.bottomLower}>
-                        <img src={girl} id={styles.girl}/>
+                        <img src={girl} id={styles.girl} onLoad={() => loaded()}/>
                         <div id={styles.bring}>
                             <img id={styles.bringImage} src={bring}/>
                             <p id={styles.bringTitle}>Bring your ideas to life</p>
@@ -63,7 +66,7 @@ export default function Header() {
                     </div> :
                         <div id={styles.bottomWrapper} >
                             <div id={styles.bottomLower}>
-                                <img src={girl} id={styles.girl}/>
+                                <img src={girl} id={styles.girl} onLoad={() => loaded()}/>
                                 <div id={styles.bring}>
                                     <img id={styles.bringImage} src={bring}/>
                                     <p id={styles.bringTitle}>Bring your ideas to life</p>

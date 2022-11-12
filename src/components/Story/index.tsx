@@ -7,6 +7,7 @@ import storyGirl from '/public/storyGirl.svg'
 import storyArrow from '/public/storyArrow.svg'
 import RoundedButton from '../common/RoundedButton'
 import { useState, useEffect } from 'react'
+import triangle from '/public/serviceTriangle.svg'
 
 
 export default function Story() {
@@ -38,6 +39,8 @@ export default function Story() {
                         <RoundedButton title='Get Started' bg='#FFB3A7' color='#1A1A1F'/>
                     </div>
                     <img src={storyTriangle} id={styles.triangle}/>
+                    <img src={storyArrow} id={styles.arrow}/>
+                    <img src={triangle} id={styles.rectangle}/>
                 </div>
             </div>
         )
@@ -56,7 +59,7 @@ export default function Story() {
                 </div>
                 <img src={storyTriangle} id={styles.triangle}/>
                 <img src={storyArrow} id={styles.arrow}/>
-
+                <img src={triangle} id={styles.rectangle}/>
             </div>
         </div>
     )
