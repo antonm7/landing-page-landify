@@ -1,8 +1,8 @@
 import styles from './Process.module.css'
-import buisness from '/public/line/buisness.svg'
-import Setting from '/public/line/Setting.svg'
-import Chart from '/public/line/Chart.svg'
-import Time from '/public/line/Time Circle.svg'
+import buisness from '/line/buisness.svg'
+import Setting from '/line/Setting.svg'
+import Chart from '/line/Chart.svg'
+import Time from '/line/Time Circle.svg'
 
 
 

@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import styles from './Line.module.css'
-import mark from '/public/mark.svg'
-import plus from '/public/plus.svg'
+import mark from '/mark.svg'
 
 interface Props {
     title:string

@@ -1,6 +1,6 @@
-import pinkSquare from '/public/shapedHeader/pinkSquare.svg'
-import triangle from '/public/shapedHeader/triangle.svg'
-import vector from '/public/shapedHeader/vector.svg'
+import pinkSquare from '/shapedHeader/pinkSquare.svg'
+import triangle from '/shapedHeader/triangle.svg'
+import vector from '/shapedHeader/vector.svg'
 
 import styles from './Header.module.css'
 

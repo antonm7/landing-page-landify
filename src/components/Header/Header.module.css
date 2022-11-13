@@ -3,7 +3,7 @@
     
 }
 #header {
-    background-image: url('/public/bg.svg');
+    background-image: url('/bg.svg');
     background-repeat: no-repeat;
     background-size: 78rem;
     background-position: left center;
@@ -323,7 +323,7 @@
         display: none;
     }
     #headersContainer {
-        background-image: url('/public/bg.svg');
+        background-image: url('/bg.svg');
         background-repeat: no-repeat;
         background-size: 47rem; 
         background-position: 0rem -2rem;
@@ -374,6 +374,12 @@
         left: 30rem;
         top: 0;
         position: absolute;
+    }
+}
+
+@media (max-width:700px) {
+    #shape {
+        display: none;
     }
 }
 

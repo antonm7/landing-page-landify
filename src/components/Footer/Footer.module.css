@@ -1,6 +1,6 @@
 #footer {
     background-color: #1A1A1F;
-    margin-top: 10rem;
+    margin-top: 10.6rem;
 }
 
 #main {
@@ -109,9 +109,13 @@
         flex-direction: column;
         padding-left: 2rem;
     }
+    #footer {
+        margin-top: 7.3rem;
+    }
     #rights {
         padding: 0;
     }
+    
 }
 
 @media (max-width:600px) {

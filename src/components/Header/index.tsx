@@ -1,18 +1,15 @@
 import styles from './Header.module.css'
 import RoundedButton from '../common/RoundedButton'
 
-import roundedArrow from '/public/roundedArrow.svg'
-import g from '/public/g.png'
-import bring from '/public/bring.svg'
-import play from '/public/play.svg'
+import roundedArrow from '/roundedArrow.svg'
+import g from '/g.png'
+import bring from '/bring.svg'
+import play from '/play.svg'
 import HeaderShape from './HeaderShape'
 import { useEffect, useState } from 'react'
 
-interface Props {
-    loaded:() => void
-}
 
-export default function Header({loaded}:Props) {
+export default function Header() {
     const [dimensions, setDimensions] = useState({ 
         height: window.innerHeight,
         width: window.innerWidth
@@ -49,7 +46,7 @@ export default function Header({loaded}:Props) {
                 </div>
                 {dimensions.width > 560 ?
                     <div id={styles.bottomLower}>
-                        <img src={g} id={styles.girl} onLoad={() => loaded()}/>
+                        <img src={g} id={styles.girl}/>
                         <div id={styles.bring}>
                             <img id={styles.bringImage} src={bring}/>
                             <p id={styles.bringTitle}>Bring your ideas to life</p>
@@ -66,7 +63,7 @@ export default function Header({loaded}:Props) {
                     </div> :
                         <div id={styles.bottomWrapper} >
                             <div id={styles.bottomLower}>
-                                <img src={g} id={styles.girl} onLoad={() => loaded()}/>
+                                <img src={g} id={styles.girl}/>
                                 <div id={styles.bring}>
                                     <img id={styles.bringImage} src={bring}/>
                                     <p id={styles.bringTitle}>Bring your ideas to life</p>
@@ -118,7 +115,7 @@ export default function Header({loaded}:Props) {
                             <p id={styles.sixK_title}>6K</p>
                             <p id={styles.sixK_subTitle}>Clients</p>
                         </div>
-                    <img src={g} id={styles.girl} onLoad={() => loaded()}/>
+                    <img src={g} id={styles.girl}/>
                     <div id={styles.bring}>
                         <img id={styles.bringImage} src={bring}/>
                         <p id={styles.bringTitle}>Bring your ideas to life</p>

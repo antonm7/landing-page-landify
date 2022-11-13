@@ -1,8 +1,6 @@
 import styles from './Questions.module.css'
-import serviceArrow from '/public/serviceArrow.svg'
-import questionsTriangle from '/public/questionsTriangle.svg'
-import plus from '/public/plus.svg'
-import mark from '/public/mark.svg'
+import serviceArrow from '/serviceArrow.svg'
+import questionsTriangle from '/questionsTriangle.svg'
 import { useState } from 'react'
 import Line from './Line'
 

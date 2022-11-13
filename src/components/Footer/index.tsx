@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import RoundedButton from '../common/RoundedButton'
 import styles from './Footer.module.css'
-import whiteLogo from '/public/whiteLogo.svg'
+import whiteLogo from '/whiteLogo.svg'
 
 export default function Footer() {
      const [dimensions, setDimensions] = useState({ 

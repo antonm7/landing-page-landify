@@ -1,10 +1,10 @@
 import styles from './Story.module.css'
 
-import shape from '/public/storyShape.svg'
-import storyTriangle from '/public/storyTriangle.svg'
-import bg from '/public/storyBg.svg'
-import s from '/public/s.png'
-import storyArrow from '/public/storyArrow.svg'
+import shape from '/storyShape.svg'
+import storyTriangle from '/storyTriangle.svg'
+import bg from '/storyBg.svg'
+import s from '/s.png'
+import storyArrow from '/storyArrow.svg'
 import RoundedButton from '../common/RoundedButton'
 import { useState, useEffect } from 'react'
 

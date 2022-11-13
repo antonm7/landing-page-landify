@@ -1,10 +1,14 @@
 import styles from './Navbar.module.css'
-import logo from '/public/logo.svg'
-import arrowDown from '/public/arrowDown.svg'
+import logo from '/logo.svg'
+import arrowDown from '/arrowDown.svg'
 import RoundedButton from '../common/RoundedButton'
 import { useState, useEffect } from 'react'
 
-export default function Navbar() {
+interface Props {
+    openMenu:() => void
+}
+
+export default function Navbar({openMenu}:Props) {
     const [dimensions, setDimensions] = useState({ 
         height: window.innerHeight,
         width: window.innerWidth
@@ -25,7 +29,7 @@ export default function Navbar() {
                 <img src={logo}/>
                 <div id={styles.container}>
                     <div id={styles.menu} className={styles.link}>
-                            <p>Menu</p>
+                            <p onClick={() => openMenu()}>Menu</p>
                         </div>
                     <div className={styles.link}>
                         <p>Product</p>
@@ -43,7 +47,6 @@ export default function Navbar() {
                         <p>Pricing</p>
                     </div>
                     {dimensions.width > 500 ? <RoundedButton marginLeft='2rem' title={'Subscribe'} bg={'#1A1A1F'} color={'#ffff'} /> : null}
-                    
                 </div>
             </div>
         </div>

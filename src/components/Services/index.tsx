@@ -1,5 +1,5 @@
 import styles from './Services.module.css'
-import arrowRight from '/public/arrowRight.svg'
+import arrowRight from '/arrowRight.svg'
 import { useEffect, useState } from 'react'
 
 export default function Services() {
