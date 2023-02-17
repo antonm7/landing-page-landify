@@ -1,5 +1,4 @@
 import styles from './Story.module.css'
-
 import shape from '/storyShape.svg'
 import storyTriangle from '/storyTriangle.svg'
 import bg from '/storyBg.svg'
@@ -7,7 +6,7 @@ import s from '/s.png'
 import storyArrow from '/storyArrow.svg'
 import RoundedButton from '../common/RoundedButton'
 import { useState, useEffect } from 'react'
-
+import {LazyLoadImage} from 'react-lazy-load-image-component'
 
 export default function Story() {
     const [dimensions, setDimensions] = useState({ 
@@ -20,7 +19,6 @@ export default function Story() {
             height: window.innerHeight,
             width: window.innerWidth
           })
-        
     }
         window.addEventListener('resize', handleResize)
       },[])
@@ -30,7 +28,7 @@ export default function Story() {
         return (
             <div id={styles.smallStory}>
                 <img src={shape} id={styles.smallShape}/>
-                <img src={s} id={styles.smallStoryGirl}/>
+                <LazyLoadImage alt='story girl' src={s} id={styles.smallStoryGirl}/>
                 <div id={styles.smallContent}>
                     <div id={styles.smallWrapper}>
                         <h1 id={styles.title}>Our Story</h1>
@@ -48,7 +46,7 @@ export default function Story() {
                 <img src={shape} id={styles.shape}/>
             <div id={styles.container}>
                 <img src={bg} id={styles.bg} />
-                <img src={s} id={styles.storyGirl}/>
+                <LazyLoadImage alt='story girl' src={s} id={styles.storyGirl}/>
                 <div id={styles.content}>
                     <h1 id={styles.title}>Our Story</h1>
                     <p id={styles.para}>We specialise in organising professional training courses and we have been doing it in Poland since 1994. As a academy of business, we are going through the development cycle.</p>

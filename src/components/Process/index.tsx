@@ -4,8 +4,6 @@ import Setting from '/line/Setting.svg'
 import Chart from '/line/Chart.svg'
 import Time from '/line/Time Circle.svg'
 
-
-
 export default function Process() {
     return (
         <div id={styles.process}>

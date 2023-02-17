@@ -9,7 +9,6 @@ interface Props {
 }
 
 export default function Menu({active,close}:Props) {
-    
     return (
         <div id={styles.menu} className={active ? styles.open : ''}>
             <img src={mark} id={styles.mark} onClick={() => close()}/>

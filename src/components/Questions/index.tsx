@@ -1,18 +1,9 @@
 import styles from './Questions.module.css'
 import serviceArrow from '/serviceArrow.svg'
 import questionsTriangle from '/questionsTriangle.svg'
-import { useState } from 'react'
 import Line from './Line'
 
-
-
 export default function Questions() {
-    const [one, setone] = useState<boolean>(false)
-    const [two, settwo] = useState<boolean>(false)
-    const [three, setthree] = useState<boolean>(false)
-    const [four, setfour] = useState<boolean>(false)
-    const [five, setfive] = useState<boolean>(false)
-
     return (
         <div id={styles.global}>
             <div id={styles.questions}>

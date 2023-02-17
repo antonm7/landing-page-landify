@@ -8,7 +8,6 @@ import play from '/play.svg'
 import HeaderShape from './HeaderShape'
 import { useEffect, useState } from 'react'
 
-
 export default function Header() {
     const [dimensions, setDimensions] = useState({ 
         height: window.innerHeight,
@@ -78,16 +77,12 @@ export default function Header() {
                                 </div>
                             </div>
                         </div>
-
             }
             </div>
         )
       }
 
-
-
-
-    return (
+      return (
         <div id={styles.wrapper}>
              <div id={styles.blackBg}>
                     </div>
@@ -95,7 +90,7 @@ export default function Header() {
                 <div id={styles.headersContainer}>
                     <h1 id={styles.h1}>
                     Academy <br />
-    of Your Business
+                    of Your Business
                     </h1>
                     <p id={styles.p}>Organizes work so teams know what to do, why it matters, and how to get it done.</p>
                     <div id={styles.buttonsWrapper}>
@@ -108,13 +103,12 @@ export default function Header() {
                         </div>
                     </div>
                     <img src={roundedArrow} id={styles.roundedArrow}/>
-                
                     </div>
                 <div id={styles.imagesContainer}>
                     <div id={styles.sixK}>
                             <p id={styles.sixK_title}>6K</p>
                             <p id={styles.sixK_subTitle}>Clients</p>
-                        </div>
+                    </div>
                     <img src={g} id={styles.girl}/>
                     <div id={styles.bring}>
                         <img id={styles.bringImage} src={bring}/>

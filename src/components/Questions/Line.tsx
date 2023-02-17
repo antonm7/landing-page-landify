@@ -9,9 +9,6 @@ interface Props {
 
 export default function Line({title, para}:Props) {
     const [open, setOpen] = useState<boolean>(false)
-
-    
-    
         return (
             <div className={styles.question} style={{maxHeight:open ? 'auto' : '',borderColor:'#DCB0FE'}} onClick={() => setOpen(!open)}>
                 <div id={styles.flex}>
